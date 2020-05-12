@@ -4,4 +4,15 @@ body
     color: white;
     margin: 0em;
     padding: 0em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul 
+{
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
 }

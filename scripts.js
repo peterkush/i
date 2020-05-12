@@ -1,8 +1,8 @@
 
     (function($) {
-    "use strict"; // Start of use strict
+    "use strict"; 
   
-    // Smooth scrolling using jQuery easing
+    
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -16,7 +16,7 @@
       }
     });
   
-    // Scroll to top button appear
+    
     $(document).scroll(function() {
       var scrollDistance = $(this).scrollTop();
       if (scrollDistance > 100) {
@@ -26,18 +26,18 @@
       }
     });
   
-    // Closes responsive menu when a scroll trigger link is clicked
+    
     $('.js-scroll-trigger').click(function() {
       $('.navbar-collapse').collapse('hide');
     });
   
-    // Activate scrollspy to add active class to navbar items on scroll
+    
     $('body').scrollspy({
       target: '#mainNav',
       offset: 80
     });
   
-    // Collapse Navbar
+    
     var navbarCollapse = function() {
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-shrink");
@@ -45,12 +45,12 @@
         $("#mainNav").removeClass("navbar-shrink");
       }
     };
-    // Collapse now if page is not at top
+    
     navbarCollapse();
-    // Collapse the navbar when page is scrolled
+    
     $(window).scroll(navbarCollapse);
   
-    // Floating label headings for the contact form
+    
     $(function() {
       $("body").on("input propertychange", ".floating-label-form-group", function(e) {
         $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
@@ -61,5 +61,5 @@
       });
     });
   
-  })(jQuery); // End of use strict
+  })(jQuery); 
   
