@@ -16,3 +16,8 @@ ul li
 {
     display: inline-block;
 }
+form 
+{
+    color:rgba(0,0,0,0.7);
+    background-color: springgreen;
+}
